@@ -643,6 +643,10 @@ h6, #service-text {
     margin: 50px 0 -35px 0;
 }
 
+#testimonial-profile-mobile img {
+    display: none;
+}
+
 #testimonial-profile-text-mobile {
     display: none;
 }
@@ -881,6 +885,10 @@ h6, #service-text {
 /* -------- MEDIA QUERIES -------------- */
 
 @media screen and (max-width: 480px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
     .main-container {
         padding: 8px 10px;
         width: 100%; 
@@ -897,7 +905,6 @@ h6, #service-text {
         width: 100%;
         height: 50px;
         padding: 4px 8px;
-        /* background-color: cornflowerblue; */
     }
 
     .menu-icon svg {
@@ -911,45 +918,54 @@ h6, #service-text {
         background-size: 100% 1300px;
         width: 100%;
         height: 100vh;
+        border: none;
     }
 
     .title-container {
-        margin: 5px auto 10px auto;
+        margin: 5rem auto 0 auto;
         padding: 0 10px;
-        /* background-color: burlywood; */
     }
 
     .heading {
-        margin: 5px auto;
+        text-align: center;
         padding: 2px;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 800;
-        width: 100%;
-        line-height: 1.5;
+        width: 90%;
+        line-height: 1.4;
+    }
+
+    .heading br {
+        display: none;
     }
     
     .description {
         margin: 2rem auto;
         font-size: 1rem;
         font-weight: 400;
-        line-height: 2;
+        line-height: 1.4;
         width: 80%;
+    }
+
+    .description br {
+        display: none;
     }
     
     .discover-btn-one {
         font-size: 1rem;
-        margin: 10px 0; 
+        margin-top: 1.5rem; 
     }
+
+    /* --------SERVICES SECTION-------- */
 
     .services-container {
         width: 100%;
-        min-height: 120vh;
+        min-height: 100vh;
     }
     
     .our-services {
-        margin-top: 1px;
-        margin-bottom: 5px;
         text-align: center;
+        font-size: 1.8rem;
     }
     
     .services {
@@ -957,33 +973,34 @@ h6, #service-text {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
-        margin: 20px 0 5px 0;
+        margin: 0.5rem 0;
     }
     
     .service {
-        max-width: 420px;
-        min-height: 230px;
+        width: 100%;
+        min-height: 200px;
         border-radius: 15px;
         border: none;
-        padding: 30px;
-        margin-top: 20px;
+        padding: 1rem;
+        margin-top: 1rem;
     }
     
     .service-logo {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        margin-top: 10px;
+        margin: 5px auto;
     }
     
     h6 {
-     font-size: 1.2rem;
+     font-size: 1rem;
      font-weight: 700;
      text-align: center;
+     padding-top: 1.5rem;
     }
     
     #service-text {
         font-size: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
         text-align: center;
     }
 
@@ -991,19 +1008,24 @@ h6, #service-text {
 
     .milestone-container {
         background: #0058530D;
-        margin-top: 10px;
         width: 100%;
         height: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         background-position: center;
         background-size: 95% auto;
-        padding: 20px 5px;
+        padding: 0.5rem 0rem 1rem 0;
     }
     
     .milestone-heading {
         text-align: center;
         font-size: 2rem;
         font-weight: 700;
-        line-height: 1.5;
+        line-height: 1.2;
+    }
+
+    .milestone-heading br {
+        display: none;
     }
     
     .milestone-description {
@@ -1012,6 +1034,9 @@ h6, #service-text {
         font-weight: 400;
         margin-top: 5px;
         line-height: 1.5;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .milestone-boxes-container {
@@ -1030,20 +1055,20 @@ h6, #service-text {
         background-color: #fff;
         border-radius: 15px;
         width: 100%;
-        min-height: 250px;
-        padding: 40px 30px;
+        height: 160px;
+        padding: 10px 0;
         margin: 10px 0 2px 0;
     }
     
     .milestone-logo {
         height: 43px;
-        margin: 5px 0 20px 0;
+        margin: 2px 0 10px 0;
     }
     
     .milestone-number {
-        font-size: 2.25rem;
+        font-size: 1.5rem;
         font-weight: 700;
-        margin: 5px 0;
+        margin: 2px 0;
     }
     
     .milestone-text {
@@ -1063,12 +1088,13 @@ h6, #service-text {
 
     .destinations-container {
         width: 100%;
-        padding: 5px 10px;
+        height: auto;
+        padding: 5px 0;
     }
     
     .popular-destinations {
         margin: 10px 0 5px 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
     }
@@ -1084,30 +1110,39 @@ h6, #service-text {
     .destinations {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         background-color: #fff;
         width: 100%;
         height: 760px;
         gap: 1.5rem;
-        margin: 30px 0 10px 0;
-        padding: 10px 80px 10px 0;
+        margin: 10px 0;
+        padding: 10px 0;
     }
     
     .destination-box {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        max-width: 390px;
-        min-height: 223px;
+        max-width: 340px;
+        height: 223px;
         border-radius: 15px;
         box-shadow: 3px 3px 10px 0px #00000014;
-        padding: 50px 20px;
+        padding: 10px 0;
+    }
+
+    .image-box img {
+        margin-left: -3px;
+    }
+
+    #image-box3 img {
+        margin-left: 8px;
     }
     
     .destination-text {
         display: flex;
         flex-direction: column;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     .destination-text .destination {
@@ -1124,35 +1159,40 @@ h6, #service-text {
         margin-top: 1rem;
     }
 
+    /* -----PACKAGES SECTION----- */
+
     .packages-container {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        min-height: 250vh;
+        height: auto;
         background-color:#ECF1F0;
-        margin: 10px auto;
-        padding: 0 5px;
+        margin: 0 auto;
+        padding: 0;
     }
     
     .packages-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
-        height: 80px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        /* background-color: darkgoldenrod; */
+        padding-top: 2rem;
     }
     
     .packages-btn-container {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+        width: 100%;
+        height: auto;
     }
     
     .packages-btn {
         border-radius: 10px;
-        width: 150px;
+        width: 160px;
         height: 60px;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .packages-btn:nth-child(1) {
@@ -1166,8 +1206,7 @@ h6, #service-text {
         align-items: center;
         width: 100%;
         height: 100vh;
-        padding: 0 1rem;
-        margin-top: 20rem;
+        margin-top: 16rem;
     }
     
     .package-card {
@@ -1175,7 +1214,6 @@ h6, #service-text {
         background-color: #fff;
         max-width: 100%;  
         min-height: auto;
-        /* margin-top: 2rem; */
     }
     
     #package-img {
@@ -1200,14 +1238,19 @@ h6, #service-text {
         margin-top: 10px;
     }
     
+    .package-text-top-left {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
     .package-text-top-right {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 400;
     }
     
     .package-text-start-center, .package-text-know {
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 0.8rem;
+        font-weight: 500;
     }
     
     .package-text-start-center {
@@ -1215,49 +1258,52 @@ h6, #service-text {
     }
     
     .package-text-location {
-        font-size: 1.2rem;
-        font-weight: 600;
+        font-size: 0.9rem;
+        font-weight: 500;
     }
     
     .discover-btn-two {
-        margin-top: 19rem;
+        margin-top: 18rem;
         text-align: center;
         font-size: 1rem;
-        width: 180px;
+        width: 155px;
     }
     
+    /* ----BOOKING CONTAINER---- */
+
     .booking-container {
         width: 100%;
-        height: 150vh;
+        height: auto;
     }
     
     .booking-heading {
         font-size: 2rem;
         font-weight: 700;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 1.5rem;
     }
     
     .booking-subtext {
         font-size: 1rem;
         font-weight: 400;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
     
     .booking-options-preview-container {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 10px;
+        padding: 0;
         width: 100%;
-        min-height: 467px;
+        height: auto;
         position: relative;
     }
     
     .booking-options-container { 
         min-height: 400px;
-        padding: 2px;
+        padding: 0;
     }
     
     .booking-options {
@@ -1265,7 +1311,7 @@ h6, #service-text {
         justify-content: flex-start;
         align-items: center;
         height: 150px;
-        padding: 0 5px;
+        padding: 0;
     }
     
     .booking-icon-container {
@@ -1276,7 +1322,7 @@ h6, #service-text {
         height: 50px;
         border-radius: 5px;
         border: none;
-        margin: 10px;
+        margin-right: 10px;
     }
 
     #destination {
@@ -1292,7 +1338,7 @@ h6, #service-text {
     }
     
     .booking-text {
-        margin: 8px;
+        margin: 0;
         color: #5E6282;
     }
     
@@ -1305,21 +1351,22 @@ h6, #service-text {
     .booking-description {
         font-size: 1rem;
         font-weight: 400;
+        margin: 0;
     }
     
     .preview-shadow img {
         display: none;
-        position: absolute;
-        bottom: -80px;
-        right: -200px;
-        opacity: 0.4;
-        z-index: -1;
     }
     
     .booking-preview-container {
-        height: 400px;
-        padding: 20px;
-        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 400px;
+        padding: 0;
+        margin-top: 10px;
         border-radius: 24px;
         position: relative;
         box-shadow: 3px 3px 20px 0px #00000014;
@@ -1328,30 +1375,32 @@ h6, #service-text {
     }
     
     .preview-photo-container {
+        margin-top: -5rem;
         width: 330px;
         height: 161px;
     }
     
     .preview-photo img {
         display: block;
-        margin-right: -2px;
+        margin: 0 auto;
         border-radius: 24px;
     }
     
     .preview-header {
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 500;
-        margin-top: 25px;
+        margin-top: 0;
+        margin-bottom: -2px;
         font-family: 'Poppins', sans-serif;
         text-align: center;
     }
     
     .preview-description {
         font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
         color: #84829A;
-        margin-top: -5px;
+        margin-top: 0;
         text-align: center;
     }
     
@@ -1360,7 +1409,7 @@ h6, #service-text {
         justify-content: center;
         width: 50%;
         gap: 15px;
-        margin: 20px auto;
+        margin: 5px auto;
     }
     
     .preview-people {
@@ -1370,7 +1419,7 @@ h6, #service-text {
     }
     
     .preview-people p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
         font-family: 'Poppins', sans-serif;
         color: #84829A;
@@ -1390,15 +1439,17 @@ h6, #service-text {
     
     .preview-overlapping-card-container {
         position: absolute;
-        top: 372px;
-        left: 60px;
+        top: 330px;
+        left: 40px;
         background-color: #fff;
-        width: 263px;
-        height: 129px;
-        padding: 20px;
+        width: 260px;
+        height: 120px;
+        padding-left: 20px;
+        padding-top: 10px;
         border-radius: 18px;
         box-shadow: 3px 3px 10px 0px #00000014;
         opacity: 0.8; 
+        background-color: #faf9f9;
         border-top: 1px solid #8A79DF; 
     }
     
@@ -1420,16 +1471,17 @@ h6, #service-text {
     }
     
     .ongoing {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         color: #84829A;
     }
     
     .trip-to-rome {
-        font-size: 1.125rem;   
+        font-size: 1rem;
+        font-weight: 500;   
     }
     
     .completion {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
     }
     
     #forty {
@@ -1440,17 +1492,22 @@ h6, #service-text {
     
     .testimonials-container {
         width: 100%;
-        height: 835px;
+        height: 320px;
         background-color: #ECF1F0;
-        padding: 8px;
-        overflow: hidden;
+        padding: 0;
+        margin-top: 5rem;
+        overflow: visible;
+        position: relative;
+        margin-bottom: 2rem;
     }
     
     .testimonial-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        width: 80%;
         font-weight: 700;
         text-align: center;
-        margin: 50px 0 -35px 0;
+        padding-top: 1.5rem;
+        margin: 10px auto 0px auto;
     }
     
     .testimonial-card-container {
@@ -1473,34 +1530,249 @@ h6, #service-text {
         display: none;        
     }
     
-    #testimonial-profile-text-mobile {
-        text-align: center;
-        background-color: cornflowerblue;
-        width: 100%;
-        height: 200px;
-        margin-top: 3.5rem;
-        padding: 10px 0px 5px 5px;
-        box-shadow: 0px 4px 59px 9px #0000000D;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.3;
-        font-family: 'Poppins', sans-serif;
-        position: relative;
+    .testimonial-profile-mobile img {
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: 280px;
+        left: 43%;
+        z-index: 1;
     }
 
-    .testimonial-profile img {
+    #testimonial-profile-text-mobile {
+        display: block;
+        text-align: center;
+        background-color: #FFF;
+        width: 90%;
+        height: 160px;
+        margin: 3rem auto 0 auto;
+        padding: 3.5rem 1rem 1rem 1rem;
+        box-shadow: 0px 4px 59px 9px #0000000D;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.3;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #testimonial-profile-text-mobile::after {
+        content: "< >";
+        display: inline-block;
+        width: 30px;
+        height: 15px;
+        padding: 5px;
+        border-radius: 20px;
+        margin-top: 5px;
+        background-color: #c1bfce;
+    }
+
+    #testimonial-profile-mobile img {
+        display: inline;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
-        position: absolute; 
-        top: 10px;
-        left: 10%;
-        z-index: 1; 
+        position: absolute;
+        top: 90px;
+        left: 39%;
+        background-color: #000;   
     }
     
     #testimonial-author {
         display: block;
-        font-size: 1.375rem;
+        font-size: 0.8rem;
         font-weight: 600;
-        padding-top: 20px;
+        padding-top: 5px;
+    }
+/* ----SUBSCRIPTION:CONTACT SECTION---- */
+    .subscription-contact-container {
+        width: 100%;
+        height: 70vh;
+        margin-top: 3rem;
+    }
+    
+    .subscription-container {
+        background-color: rgba(159, 255, 236, 0.2);
+        width: 100%;
+        min-height: auto;
+        border-radius: 50px 10px 10px 10px;
+        margin: 20px auto;
+        padding: 40px;
+        position: relative;
+    }
+    
+    .right-icon-container {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 0px;
+        bottom: 360px;
+        border-radius: 50%;
+        background-image: linear-gradient(201.65deg, 
+        #32DF8F 10.27%, #005F15 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subscription-heading {
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        color: #5E6282;
+        line-height: 1.3;
+        margin: 2rem 0;
+    }
+
+    .subscribe-heading br {
+        display: none;
+    }
+    
+    .subscription-container-shadow img {
+        display: none;
+        width: 153px;
+        height: 166px;
+        position: absolute;
+        right: -100px;
+        top: 315px;
+        z-index: -2;
+    }
+    
+    .email-subscribe {
+        display: block;
+        /* flex-direction: column;
+        justify-content: center; */
+        gap: 0px;
+        position: relative;
+        height: 20px;
+        margin-top: 20px;   
+    }
+    
+    .email-subscribe input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    
+    .email-icon, .place-holder {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        padding: 25px;
+        color: #39425D;      
+    }
+    
+    .place-holder {
+        margin-left: 30px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #39425D;
+    }
+    
+    .subscribe-button {
+        display: block;
+        width: 140px;
+        height: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #00A651;
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 1.5rem auto 0 auto;
+    }
+    
+    .contact-container {
+        display: block;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+       
+        padding: 0;
+    }
+    
+    .contact-group .contact-travel-goo {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #000;
+        margin: 0 auto; 
+        background-color: darkcyan;
+        text-align: center;
+    }
+    
+    .contact-group .contact-heading {
+        font-size: 1rem;
+        font-weight: 700; 
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    .contact-group .contact-text {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #5E6282;
+        margin-top: 10px;
+    }
+    
+    .contact-travel-goo a {
+        color: #000;
+        width: 80px;
+    }
+    
+    .contact-group .logo-text {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: #5E6282;
+        margin-top: 20px;
+    }
+    
+    .socials .social-logos-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .social-logos-container .social-logo-insta {
+        background-image: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, 
+        #F289AA 60deg, #C68BF0 106.09deg,
+         #D164DA 153.75deg, #C963E8 221.25deg, 
+         #BFC2E8 258.75deg, #FFC999 288.75deg, 
+         #D0D8C9 315deg, #BAD0F1 334.13deg, 
+         #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+        box-shadow: 0px 2px 10px 0px #0000001A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: greenyellow;
+        width: 65px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    
+    .discover-text {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #5E6282;
+    }
+    
+    .play-app-store-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+    }
+    
+    .rights {
+        font-size: 0.875rem;
+        font-weight: 400;
+        text-align: center;
+        color: #5E6282;
+        padding: 50px;
     }
 }
 
