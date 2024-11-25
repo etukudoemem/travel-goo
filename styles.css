@@ -908,8 +908,8 @@ h6, #service-text {
     }
 
     .menu-icon svg {
-        width: 48px;
-        height: 48px;
+        width: 32px;
+        height: 32px;
     }
 
     .hero-section {
@@ -952,15 +952,22 @@ h6, #service-text {
     }
     
     .discover-btn-one {
-        font-size: 1rem;
-        margin-top: 1.5rem; 
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 55px;
+        border-radius: 8px;
     }
 
     /* --------SERVICES SECTION-------- */
 
     .services-container {
         width: 100%;
-        min-height: 100vh;
+        height: auto;
+        padding: 0 5px;
+        margin-bottom: 2rem;
     }
     
     .our-services {
@@ -978,10 +985,10 @@ h6, #service-text {
     
     .service {
         width: 100%;
-        min-height: 200px;
+        min-height: 220px;
         border-radius: 15px;
         border: none;
-        padding: 1rem;
+        padding: 1rem 0;
         margin-top: 1rem;
     }
     
@@ -1055,7 +1062,7 @@ h6, #service-text {
         background-color: #fff;
         border-radius: 15px;
         width: 100%;
-        height: 160px;
+        height: 200px;
         padding: 10px 0;
         margin: 10px 0 2px 0;
     }
@@ -1168,30 +1175,31 @@ h6, #service-text {
         height: auto;
         background-color:#ECF1F0;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 10px;
     }
     
     .packages-heading {
         font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
-        padding-top: 2rem;
+        padding-top: 0.8rem;
+        margin-bottom: 1.8rem;
     }
     
     .packages-btn-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.8rem;
         flex-wrap: wrap;
         width: 100%;
         height: auto;
     }
     
     .packages-btn {
-        border-radius: 10px;
-        width: 160px;
-        height: 60px;
+        border-radius: 8px;
+        width: 150px;
+        height: 55px;
         font-size: 0.8rem;
     }
     
@@ -1206,7 +1214,7 @@ h6, #service-text {
         align-items: center;
         width: 100%;
         height: 100vh;
-        margin-top: 16rem;
+        margin-top: 14.5rem;
     }
     
     .package-card {
@@ -1214,6 +1222,7 @@ h6, #service-text {
         background-color: #fff;
         max-width: 100%;  
         min-height: auto;
+        margin-top: -10px;
     }
     
     #package-img {
@@ -1263,10 +1272,12 @@ h6, #service-text {
     }
     
     .discover-btn-two {
-        margin-top: 18rem;
-        text-align: center;
-        font-size: 1rem;
-        width: 155px;
+        margin: 13.3rem auto 2rem auto;
+        font-size: 0.8rem;
+        height: 55px;
+        width: 100%;
+        padding: 5px 7rem;
+        border-radius: 8px;
     }
     
     /* ----BOOKING CONTAINER---- */
@@ -1277,10 +1288,13 @@ h6, #service-text {
     }
     
     .booking-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
     
     .booking-subtext {
@@ -1296,6 +1310,7 @@ h6, #service-text {
         flex-direction: column;
         justify-content: space-around;
         padding: 0;
+        margin-top: 0;
         width: 100%;
         height: auto;
         position: relative;
@@ -1308,10 +1323,12 @@ h6, #service-text {
     
     .booking-options {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        height: 150px;
+        gap: 0.5rem;
+        height: 100px;
         padding: 0;
+        margin-top: 2rem;
     }
     
     .booking-icon-container {
@@ -1346,6 +1363,7 @@ h6, #service-text {
         font-size: 1rem;
         font-weight: 700;
         justify-self: flex-start;
+        padding-top: 0;
     }
     
     .booking-description {
@@ -1371,7 +1389,7 @@ h6, #service-text {
         position: relative;
         box-shadow: 3px 3px 20px 0px #00000014;
         background-color: #fff;
-        margin-top: 3.5rem;
+        margin-top: 2rem;
     }
     
     .preview-photo-container {
@@ -1400,7 +1418,8 @@ h6, #service-text {
         font-size: 0.8rem;
         font-weight: 500;
         color: #84829A;
-        margin-top: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
         text-align: center;
     }
     
@@ -1440,17 +1459,15 @@ h6, #service-text {
     .preview-overlapping-card-container {
         position: absolute;
         top: 330px;
-        left: 40px;
+        left: 12%;
         background-color: #fff;
         width: 260px;
-        height: 120px;
+        height: 100px;
         padding-left: 20px;
         padding-top: 10px;
         border-radius: 18px;
         box-shadow: 3px 3px 10px 0px #00000014;
-        opacity: 0.8; 
-        background-color: #faf9f9;
-        border-top: 1px solid #8A79DF; 
+        border-top: 1px dashed #8A79DF; 
     }
     
     .preview-overlapping-card {
@@ -1596,7 +1613,7 @@ h6, #service-text {
         min-height: auto;
         border-radius: 50px 10px 10px 10px;
         margin: 20px auto;
-        padding: 40px;
+        padding: 0;
         position: relative;
     }
     
@@ -1620,7 +1637,7 @@ h6, #service-text {
         text-align: center;
         color: #5E6282;
         line-height: 1.3;
-        margin: 2rem 0;
+        padding: 6rem 2rem 0 2rem;   
     }
 
     .subscribe-heading br {
@@ -1629,39 +1646,39 @@ h6, #service-text {
     
     .subscription-container-shadow img {
         display: none;
-        width: 153px;
-        height: 166px;
-        position: absolute;
-        right: -100px;
-        top: 315px;
-        z-index: -2;
     }
     
     .email-subscribe {
         display: block;
-        /* flex-direction: column;
-        justify-content: center; */
-        gap: 0px;
         position: relative;
-        height: 20px;
-        margin-top: 20px;   
+        height: auto;
+        margin-top: -1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
     }
     
     .email-subscribe input {
+        display: center;
+        align-items: center;
         width: 100%;
-        height: 50px;
+        height: 55px;
         border: none;
-        border-radius: 10px;
+        border-radius: 8px;
         margin: 0 auto;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
     }
     
     .email-icon, .place-holder {
         position: absolute;
-        left: 30px;
-        top: 10px;
+        left: -15px;
+        top: -5px;
         padding: 25px;
         color: #39425D;      
+    }
+
+    .email-icon {
+        top: -8px;
     }
     
     .place-holder {
@@ -1673,17 +1690,19 @@ h6, #service-text {
     
     .subscribe-button {
         display: block;
-        width: 140px;
-        height: 50px;
+        width: 100%;
+        height: 55px;
         padding: 10px;
         border: none;
-        border-radius: 10px;
+        border-radius: 8px;
         background-color: #00A651;
         color: #fff;
         font-size: 0.8rem;
         font-weight: 600;
         margin: 1.5rem auto 0 auto;
     }
+
+    /* -----CONTACT SECTION----- */
     
     .contact-container {
         display: block;
@@ -1691,19 +1710,18 @@ h6, #service-text {
         /* justify-content: center; */
         text-align: center;
         width: 100%;
-        height: 100vh;
-       
+        height: 110vh;
         padding: 0;
+        margin-top: 2rem;
     }
     
     .contact-group .contact-travel-goo {
-        display: block;
+        display: flex;
+        justify-content: center;
         font-size: 1.5rem;
         font-weight: 700;
         color: #000;
-        margin: 0 auto; 
-        background-color: darkcyan;
-        text-align: center;
+        margin: 0;
     }
     
     .contact-group .contact-heading {
@@ -1734,7 +1752,9 @@ h6, #service-text {
     
     .socials .social-logos-container {
         display: flex;
+        justify-content: center;
         align-items: center;
+        margin-top: 1.5rem;
     }
     
     .social-logos-container .social-logo-insta {
@@ -1755,16 +1775,18 @@ h6, #service-text {
     }
     
     .discover-text {
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 400;
         color: #5E6282;
+        margin-top: 1rem;
     }
     
     .play-app-store-container {
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: 25px;
+        margin-top: 1rem;
     }
     
     .rights {
@@ -1772,7 +1794,7 @@ h6, #service-text {
         font-weight: 400;
         text-align: center;
         color: #5E6282;
-        padding: 50px;
+        padding: 0;
     }
 }
 
