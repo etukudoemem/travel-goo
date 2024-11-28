@@ -890,7 +890,6 @@ h6, #service-text {
     }
 
     .main-container {
-        padding: 8px 10px;
         width: 100%; 
     }
 
@@ -919,6 +918,7 @@ h6, #service-text {
         width: 100%;
         height: 100vh;
         border: none;
+        padding: 0;
     }
 
     .title-container {
@@ -943,7 +943,7 @@ h6, #service-text {
         margin: 2rem auto;
         font-size: 1rem;
         font-weight: 400;
-        line-height: 1.4;
+        line-height: 1.5;
         width: 80%;
     }
 
@@ -953,7 +953,7 @@ h6, #service-text {
     
     .discover-btn-one {
         font-size: 0.8rem;
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
         margin-left: auto;
         margin-right: auto;
         width: 95%;
@@ -966,8 +966,9 @@ h6, #service-text {
     .services-container {
         width: 100%;
         height: auto;
-        padding: 0 5px;
+        padding: 8px 15px;
         margin-bottom: 2rem;
+        margin-top: -3rem;
     }
     
     .our-services {
@@ -993,7 +994,7 @@ h6, #service-text {
     }
     
     .service-logo {
-        margin: 5px auto;
+        margin: 20px auto 5px auto;
     }
     
     h6 {
@@ -1051,7 +1052,9 @@ h6, #service-text {
         flex-direction: column;
         place-content: center;
         gap: 10px;
-        padding: 0 10px;
+        /* padding: 0 10px; */
+        padding: 0 15px;
+        padding-bottom: 1rem;
     }
     
     .milestone {
@@ -1096,7 +1099,7 @@ h6, #service-text {
     .destinations-container {
         width: 100%;
         height: auto;
-        padding: 5px 0;
+        padding: 8px 10px;
     }
     
     .popular-destinations {
@@ -1175,7 +1178,8 @@ h6, #service-text {
         height: auto;
         background-color:#ECF1F0;
         margin: 0 auto;
-        padding: 0 10px;
+        /* padding: 0 10px; */
+        padding: 0px 15px;
     }
     
     .packages-heading {
@@ -1194,11 +1198,12 @@ h6, #service-text {
         flex-wrap: wrap;
         width: 100%;
         height: auto;
+        margin-bottom: 0.7rem;
     }
     
     .packages-btn {
         border-radius: 8px;
-        width: 150px;
+        width: 158px;
         height: 55px;
         font-size: 0.8rem;
     }
@@ -1272,7 +1277,7 @@ h6, #service-text {
     }
     
     .discover-btn-two {
-        margin: 13.3rem auto 2rem auto;
+        margin: 14.3rem auto 2rem auto;
         font-size: 0.8rem;
         height: 55px;
         width: 100%;
@@ -1285,6 +1290,7 @@ h6, #service-text {
     .booking-container {
         width: 100%;
         height: auto;
+        padding: 0px 15px;
     }
     
     .booking-heading {
@@ -1401,7 +1407,8 @@ h6, #service-text {
     .preview-photo img {
         display: block;
         margin: 0 auto;
-        border-radius: 24px;
+        border-radius: 20px;
+        padding: 4px 10px 2px 10px;
     }
     
     .preview-header {
@@ -1459,7 +1466,7 @@ h6, #service-text {
     .preview-overlapping-card-container {
         position: absolute;
         top: 330px;
-        left: 12%;
+        left: 11%;
         background-color: #fff;
         width: 260px;
         height: 100px;
@@ -1467,7 +1474,7 @@ h6, #service-text {
         padding-top: 10px;
         border-radius: 18px;
         box-shadow: 3px 3px 10px 0px #00000014;
-        border-top: 1px dashed #8A79DF; 
+        border-top: 1px solid #8A79DF; 
     }
     
     .preview-overlapping-card {
@@ -1509,18 +1516,19 @@ h6, #service-text {
     
     .testimonials-container {
         width: 100%;
-        height: 320px;
+        height: 330px;
         background-color: #ECF1F0;
         padding: 0;
         margin-top: 5rem;
         overflow: visible;
         position: relative;
         margin-bottom: 2rem;
+        padding: 2px 15px 0 15px;
     }
     
     .testimonial-heading {
         font-size: 1.5rem;
-        width: 80%;
+        width: 90%;
         font-weight: 700;
         text-align: center;
         padding-top: 1.5rem;
@@ -1560,7 +1568,7 @@ h6, #service-text {
         display: block;
         text-align: center;
         background-color: #FFF;
-        width: 90%;
+        width: 100%;
         height: 160px;
         margin: 3rem auto 0 auto;
         padding: 3.5rem 1rem 1rem 1rem;
@@ -1589,7 +1597,7 @@ h6, #service-text {
         height: 80px;
         border-radius: 50%;
         position: absolute;
-        top: 90px;
+        top: 100px;
         left: 39%;
         background-color: #000;   
     }
@@ -1605,6 +1613,7 @@ h6, #service-text {
         width: 100%;
         height: 70vh;
         margin-top: 3rem;
+        padding: 0 15px;
     }
     
     .subscription-container {
@@ -1655,7 +1664,7 @@ h6, #service-text {
         margin-top: -1.5rem;
         margin-left: auto;
         margin-right: auto;
-        width: 95%;
+        width: 90%;
     }
     
     .email-subscribe input {
@@ -1666,7 +1675,6 @@ h6, #service-text {
         border: none;
         border-radius: 8px;
         margin: 0 auto;
-        /* margin-top: 1rem; */
     }
     
     .email-icon, .place-holder {
@@ -1705,20 +1713,20 @@ h6, #service-text {
     /* -----CONTACT SECTION----- */
     
     .contact-container {
-        display: block;
-        /* flex-direction: column; */
-        /* justify-content: center; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
         width: 100%;
-        height: 110vh;
-        padding: 0;
+        height: auto;
+        padding: 0 0.5rem;
         margin-top: 2rem;
     }
     
     .contact-group .contact-travel-goo {
         display: flex;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #000;
         margin: 0;
@@ -1728,7 +1736,7 @@ h6, #service-text {
         font-size: 1rem;
         font-weight: 700; 
         margin-bottom: 10px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     
     .contact-group .contact-text {
@@ -1740,14 +1748,20 @@ h6, #service-text {
     
     .contact-travel-goo a {
         color: #000;
-        width: 80px;
     }
     
     .contact-group .logo-text {
-        font-size: 0.8125rem;
-        font-weight: 600;
+        font-size: 0.8rem;
+        font-weight: 400;
         color: #5E6282;
-        margin-top: 20px;
+        margin-top: 10px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-text br{
+        display: none;
     }
     
     .socials .social-logos-container {
@@ -1768,7 +1782,6 @@ h6, #service-text {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: greenyellow;
         width: 65px;
         height: 60px;
         border-radius: 50%;
@@ -1785,16 +1798,18 @@ h6, #service-text {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         margin-top: 1rem;
+        width: 100%;
     }
     
     .rights {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         font-weight: 400;
         text-align: center;
         color: #5E6282;
-        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 0;
     }
 }
 
