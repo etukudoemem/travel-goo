@@ -931,7 +931,7 @@ h6, #service-text {
         padding: 2px;
         font-size: 1.5rem;
         font-weight: 800;
-        width: 90%;
+        width: 80%;
         line-height: 1.4;
     }
 
@@ -940,11 +940,11 @@ h6, #service-text {
     }
     
     .description {
-        margin: 2rem auto;
+        margin: 3rem auto 2rem auto;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
-        width: 80%;
+        width: 70%;
     }
 
     .description br {
@@ -1030,6 +1030,8 @@ h6, #service-text {
         font-size: 2rem;
         font-weight: 700;
         line-height: 1.2;
+        width: 85%;
+        margin: 0 auto;
     }
 
     .milestone-heading br {
@@ -1040,7 +1042,7 @@ h6, #service-text {
         text-align: center;
         font-size: 1rem;
         font-weight: 400;
-        margin-top: 5px;
+        margin-top: 1rem;
         line-height: 1.5;
         width: 80%;
         margin-left: auto;
@@ -1277,11 +1279,12 @@ h6, #service-text {
     }
     
     .discover-btn-two {
+        display: flex;
+        justify-content: center;
         margin: 14.3rem auto 2rem auto;
         font-size: 0.8rem;
         height: 55px;
         width: 100%;
-        padding: 5px 7rem;
         border-radius: 8px;
     }
     
@@ -1466,7 +1469,7 @@ h6, #service-text {
     .preview-overlapping-card-container {
         position: absolute;
         top: 330px;
-        left: 11%;
+        left: 14%;
         background-color: #fff;
         width: 260px;
         height: 100px;
@@ -1516,7 +1519,7 @@ h6, #service-text {
     
     .testimonials-container {
         width: 100%;
-        height: 330px;
+        height: 400px;
         background-color: #ECF1F0;
         padding: 0;
         margin-top: 5rem;
@@ -1569,7 +1572,7 @@ h6, #service-text {
         text-align: center;
         background-color: #FFF;
         width: 100%;
-        height: 160px;
+        height: 250px;
         margin: 3rem auto 0 auto;
         padding: 3.5rem 1rem 1rem 1rem;
         box-shadow: 0px 4px 59px 9px #0000000D;
@@ -1583,12 +1586,15 @@ h6, #service-text {
     #testimonial-profile-text-mobile::after {
         content: "< >";
         display: inline-block;
-        width: 30px;
+        width: 50px;
         height: 15px;
         padding: 5px;
         border-radius: 20px;
-        margin-top: 5px;
-        background-color: #c1bfce;
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: #8a8a8a;
+        font-weight: 700;
+        /* background-color: #c1bfce; */
     }
 
     #testimonial-profile-mobile img {
@@ -1597,7 +1603,7 @@ h6, #service-text {
         height: 80px;
         border-radius: 50%;
         position: absolute;
-        top: 100px;
+        top: 80px;
         left: 39%;
         background-color: #000;   
     }
@@ -1607,6 +1613,7 @@ h6, #service-text {
         font-size: 0.8rem;
         font-weight: 600;
         padding-top: 5px;
+        margin-top: 0.5rem;
     }
 /* ----SUBSCRIPTION:CONTACT SECTION---- */
     .subscription-contact-container {
@@ -1755,7 +1762,7 @@ h6, #service-text {
         font-weight: 400;
         color: #5E6282;
         margin-top: 10px;
-        width: 50%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1796,6 +1803,7 @@ h6, #service-text {
     
     .play-app-store-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -1803,6 +1811,14 @@ h6, #service-text {
         width: 100%;
     }
     
+    .playstore img {
+        width: 200px;
+    }
+
+    .appstore img {
+        width: 200px;
+    }
+
     .rights {
         font-size: 0.75rem;
         font-weight: 400;
